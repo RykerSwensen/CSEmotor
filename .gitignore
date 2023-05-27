@@ -14,3 +14,12 @@ node_modules
 
 # .DS_Store is only for Mac users
 **/.DS_Store
+
+# Read me was for assignment directions, asked to leave out in set-up instructions
+README.md
+
+# node_modules are a large storage folder, no need to push.
+node_modules
+
+# ignore lock-yaml
+pnpm-lock.yaml
