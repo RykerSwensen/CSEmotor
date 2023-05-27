@@ -651,3 +651,23 @@ font-size: 2rem;
 footer #errorTest:hover{
 color: pink;
 }
+
+#inv-display li{
+  list-style: none;
+  border: 3px solid #00000056;
+  border-radius: 15px ;
+  text-align: center;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  background-color: gray;
+  font-size: 2rem;
+  height: 500px;
+  width: 400px;
+  overflow-x: hidden;
+  
+  
+  }
