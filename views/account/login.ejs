@@ -4,7 +4,6 @@
       res.redirect('/')
   } %>
   
-  <%- messages() %>
 
   <% if (errors) { %>
       <ul class="notice">
@@ -13,6 +12,8 @@
           <% }) %>
       </ul>
       <% } %>
+
+  <%- messages() %>
   
 <section class="form-cont">
   <h2>User Login</h2>

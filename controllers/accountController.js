@@ -1,5 +1,5 @@
 const utilities = require("../utilities")
-const accModel = require("../models/account-model")
+const accountModel = require("../models/account-model")
 const bcrypt = require("bcryptjs")
 
 
@@ -50,7 +50,7 @@ async function registerAccount(req, res) {
      })
     }
     
-    const regResult = await accModel.registerAccount(
+    const regResult = await accountModel.registerAccount(
         account_firstname,
         account_lastname,
         account_email,
@@ -76,4 +76,36 @@ async function registerAccount(req, res) {
     }
 }
 
-module.exports = { buildLogin, buildRegister, registerAccount }
+/* ****************************************
+*  Processed Login
+* *************************************** */
+async function registerLogin(req, res) {
+  let nav = await utilities.getNav()
+  const { account_email, account_password } = req.body
+
+  const regResult = await accountModel.registerAccount(
+    account_email,
+    account_password
+  )
+
+  if (regResult) {
+    req.flash(
+      "success",
+      `Congratulations, ${account_email} you\'re logged in.`
+    )
+    res.status(201).render("account/login", {
+      title: "Login",
+      nav,
+      errors: null,
+    })
+  } else {
+    req.flash("notice", "Sorry, the login failed.")
+    res.status(501).render("account/register", {
+      title: "Login",
+      nav,
+      errors: null,
+    })
+  }
+}
+
+module.exports = { buildLogin, buildRegister, registerAccount, registerLogin }

@@ -5,6 +5,10 @@ html {
   min-width: 750px;
 }
 
+#tools{
+  font-size: 1.5rem;
+  text-align: center;
+ }
 .siteName{
   font-size: 40px;
   font-weight: bold;
@@ -151,7 +155,6 @@ figcaption>a {
 
   html,
   body {
-    max-width: 100%;
     overflow-x: hidden;
   }
 
@@ -170,7 +173,6 @@ figcaption>a {
   }
 
   #grid-container {
-    width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -179,7 +181,6 @@ figcaption>a {
   }
 
   #delorian-image {
-    width: 100%;
     height: auto;
   }
 
@@ -306,6 +307,220 @@ figcaption>a {
 
 }
 
+#login-form{
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000000ae;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#login-form p {
+  color: white;
+  text-align: center;
+}
+
+#login-form fieldset{
+  margin: 2rem 0;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  background-color: #1a202b;
+  justify-content: center;
+}
+
+#login-form label{
+  display: block;
+  text-align: left;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  justify-content: center;
+  text-align: center;
+}
+
+#login-form input{
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  text-align: center;
+}
+
+#login-form .login-btn{
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
+#login-form h2{
+text-align: center;
+color: #fff;
+font-size: 1.2rem;
+}
+
+#login-form a{
+  color: #fff;
+  font-size: 2rem;
+}
+
+#login-form #check{
+  display: flex;
+  font-size: 1rem;
+  margin: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#check input{
+  cursor: pointer;
+}
+
+#login-form input:required {
+  border-right: orange solid 20px;
+  text-align: center;
+}
+
+#login-form input:required:valid {
+  border-right: green solid 20px;
+  text-align: center;
+}
+
+
+/* REGISTRATION FORM */
+
+#reg-form{
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000000ae;
+  color: white;
+  text-align: center;
+}
+
+#reg-form p {
+  font-size: 2rem;
+}
+
+
+#reg-form label{
+  display: block;
+  padding-top: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin: 15px;
+}
+
+#reg-form input{
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#reg-form .login-btn{
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#reg-form .login-btn:hover{
+background-color: #0d6e92;
+color: #fff;
+}
+
+
+#reg-form #check2{
+  display: flex;
+  font-size: 1rem;
+  margin: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#check2 input{
+  width: 7%;
+  margin-left: 8px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+#messages {
+  color:rgb(162, 7, 7);
+  font-family: 'Montserrat', sans-serif;
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+#reg-form #instructions p{
+  color: yellow;
+  margin: 20px;
+}
+
+#reg-form input:required {
+  border-right: orange solid 20px;
+}
+
+#reg-form input:required:valid {
+  border-right: green solid 20px;
+}
+
+#reg-form legend{
+ margin-top: 10%;
+}
+
+#reg-form #required-info{
+  color: white;
+  margin-left: 18px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.notice{
+  color: rgb(151, 0, 0);
+}
+
+#addinv-form{
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000000ae;
+  color: white;
+  text-align: center;
+}
+
+#addinv-form p {
+  font-size: 2rem;
+}
+
+
+#addinv-form label{
+  display: block;
+  padding-top: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin: 15px;
+}
+
+#addinv-form input{
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+#classification_id{
+  width: 50%;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 1799px) and (min-width: 1201px) {
 
   body {
@@ -405,6 +620,7 @@ figcaption>a {
       
       }
 }
+
 
 @media only screen and (min-width: 1800px) {
   body {
