@@ -1,0 +1,13 @@
+<%# management  heading %>
+<% if (title) { %>
+    <h1 class="title-h1"><%= title %></h1>
+    <% } else {
+        res.redirect('/')
+    } %>
+    
+    <%# To display a custom dynamic message %>
+    <%- messages() %>
+    
+<a class="management-link" href="../inv/add-classification">Add Classification</a>
+
+<a class="management-link" href="../inv/add-inventory">Add Inventory</a>
