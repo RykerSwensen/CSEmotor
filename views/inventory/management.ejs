@@ -1,13 +1,23 @@
-<%# management  heading %>
+<%# Content Heading %>
 <% if (title) { %>
-    <h1 class="title-h1"><%= title %></h1>
-    <% } else {
-        res.redirect('/')
-    } %>
-    
-    <%# To display a custom dynamic message %>
-    <%- messages() %>
-    
-<a class="management-link" href="../inv/add-classification">Add Classification</a>
+    <h1><%= title %></h1>
+<% } else {
+    res.redirect('/')
+} %>
 
-<a class="management-link" href="../inv/add-inventory">Add Inventory</a>
+
+<%- messages() %>
+
+<a href="/inv/add-classification" class="new_classification">Add New Classification</a>
+<a href="/inv/add-inventory" class="new_car">Add New Car</a>
+
+<h2>Manage Inventory</h2>
+<p>Select a classification from the list to see the items belonging to the classification</p>
+<label for="classification_id">Classification:</label><br>
+<%- dropDown %>
+
+<table id="inventoryDisplay" class="inventoryDisplay"></table>
+
+<noscript>JavaScript must be enabled to use this page.</noscript>
+
+<script src="../../js/inventory.js"></script>
