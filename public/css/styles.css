@@ -394,7 +394,7 @@ font-size: 1.2rem;
 
 /* REGISTRATION FORM */
 
-#reg-form{
+form{
   margin: 20px;
   font-family: 'Montserrat', sans-serif;
   background-color: #000000ae;
@@ -402,12 +402,12 @@ font-size: 1.2rem;
   text-align: center;
 }
 
-#reg-form p {
+form p {
   font-size: 2rem;
 }
 
 
-#reg-form label{
+form label{
   display: block;
   padding-top: 1rem;
   color: #fff;
@@ -416,27 +416,27 @@ font-size: 1.2rem;
   margin: 15px;
 }
 
-#reg-form input{
+form input{
   padding: 0.75rem;
   border-radius: 10px;
   border: none;
   border-radius: 20px;
 }
 
-#reg-form .login-btn{
+form .login-btn{
   width: 30%;
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
 }
 
-#reg-form .login-btn:hover{
+form .login-btn:hover{
 background-color: #0d6e92;
 color: #fff;
 }
 
 
-#reg-form #check2{
+form #check2{
   display: flex;
   font-size: 1rem;
   margin: 15px;
